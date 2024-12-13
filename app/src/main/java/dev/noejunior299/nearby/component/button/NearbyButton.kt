@@ -22,16 +22,15 @@ import dev.noejunior299.nearby.ui.theme.GreenBase
 
 
 @Composable
-private fun NearbyButton(
+private fun String?.NearbyButton(
     modifier: Modifier = Modifier,
-    text: String? = null,
     @DrawableRes iconRes: Int? = null,
     onClick: () -> Unit
 ) {
     Button(
         shape = RoundedCornerShape(16.dp),
         modifier = modifier.heightIn(min = 56.dp),
-        contentPadding = if (text == null && iconRes != null) PaddingValues(0.dp) else PaddingValues(0.dp),
+        contentPadding = if (this == null && iconRes != null) PaddingValues(0.dp) else PaddingValues(0.dp),
         onClick = onClick,
         colors = ButtonDefaults.buttonColors(
             containerColor = GreenBase
@@ -44,7 +43,7 @@ private fun NearbyButton(
             iconRes?.let {
                 Icon(painter = painterResource(id = iconRes), contentDescription = "Ícone do Botão")
             }
-            text?.let { Text(text = text) }
+            this@NearbyButton?.let { Text(text = this@NearbyButton) }
         }
     }
 }
@@ -52,9 +51,8 @@ private fun NearbyButton(
 @Preview
 @Composable
 private fun NearbyButtonPreview() {
-    NearbyButton(
+    "Faça o scan".NearbyButton(
         modifier = Modifier.fillMaxWidth(),
-        text = "Faça o scan",
         iconRes = R.drawable.ic_scan
     ) {
 
