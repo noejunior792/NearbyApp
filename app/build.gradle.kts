@@ -6,11 +6,12 @@ plugins {
 
 android {
     namespace = "dev.noejunior299.nearby"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "dev.noejunior299.nearby"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
