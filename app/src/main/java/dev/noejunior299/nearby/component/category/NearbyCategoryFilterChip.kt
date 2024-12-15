@@ -56,7 +56,7 @@ fun NearbyCategoryFilterChip(
             selectedContainerColor = GreenBase,
         ),
         selected = isSelected,
-        onClick = { onClick(isSelected) },
+        onClick = { onClick(!isSelected) },
         label = {
             Text(
                 text = category.name,
@@ -76,6 +76,19 @@ fun NearbyCategoryFilterChipPreview() {
        name = "Alimentação"
    ),
         isSelected = true,
+        onClick = {}
+    )
+}
+
+@Preview
+@Composable
+fun NearbyCategoryFilterChipNoSelectPreview() {
+    NearbyCategoryFilterChip(
+        category = NearbyCategory (
+            id = "1",
+            name = "Cinema"
+        ),
+        isSelected = false,
         onClick = {}
     )
 }
