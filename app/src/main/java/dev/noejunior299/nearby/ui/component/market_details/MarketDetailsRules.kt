@@ -12,9 +12,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import dev.noejunior299.nearby.data.model.NearbyRule
 import dev.noejunior299.nearby.data.model.mock.mockRules
-import dev.noejunior299.nearby.theme.Gray400
-import dev.noejunior299.nearby.theme.Gray500
-import dev.noejunior299.nearby.theme.Typography
+import dev.noejunior299.nearby.ui.theme.Gray400
+import dev.noejunior299.nearby.ui.theme.Gray500
+import dev.noejunior299.nearby.ui.theme.Typography
 
 @Composable
 fun MarketDetailsRules(

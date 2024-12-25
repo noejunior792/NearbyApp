@@ -14,10 +14,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import dev.noejunior299.nearby.data.model.NearbyCategory
-import dev.noejunior299.nearby.theme.Gray300
-import dev.noejunior299.nearby.theme.Gray400
-import dev.noejunior299.nearby.theme.GreenBase
-import dev.noejunior299.nearby.theme.Typography
+import dev.noejunior299.nearby.ui.theme.Gray300
+import dev.noejunior299.nearby.ui.theme.Gray400
+import dev.noejunior299.nearby.ui.theme.GreenBase
+import dev.noejunior299.nearby.ui.theme.Typography
 
 @Composable
 fun NearbyCategoryFilterChip(

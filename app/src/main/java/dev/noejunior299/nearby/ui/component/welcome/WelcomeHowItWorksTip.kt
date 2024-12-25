@@ -13,9 +13,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import dev.noejunior299.nearby.theme.Gray500
-import dev.noejunior299.nearby.theme.RedBase
-import dev.noejunior299.nearby.theme.Typography
+import dev.noejunior299.nearby.ui.theme.Gray500
+import dev.noejunior299.nearby.ui.theme.RedBase
+import dev.noejunior299.nearby.ui.theme.Typography
 
 @Composable
 fun WelcomeHowItWorksTip(

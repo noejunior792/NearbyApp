@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import dev.noejunior299.nearby.R
-import dev.noejunior299.nearby.theme.GreenLight
+import dev.noejunior299.nearby.ui.theme.GreenLight
 
 @Composable
 fun SplashScreen(modifier: Modifier = Modifier) {

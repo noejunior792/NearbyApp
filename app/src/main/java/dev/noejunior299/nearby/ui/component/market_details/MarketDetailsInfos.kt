@@ -15,9 +15,9 @@ import androidx.compose.ui.unit.dp
 import dev.noejunior299.nearby.R
 import dev.noejunior299.nearby.data.model.NearbyMarket
 import dev.noejunior299.nearby.data.model.mock.mockMarkets
-import dev.noejunior299.nearby.theme.Gray400
-import dev.noejunior299.nearby.theme.Gray500
-import dev.noejunior299.nearby.theme.Typography
+import dev.noejunior299.nearby.ui.theme.Gray400
+import dev.noejunior299.nearby.ui.theme.Gray500
+import dev.noejunior299.nearby.ui.theme.Typography
 
 @Composable
 fun MarketDetailsInfos(
