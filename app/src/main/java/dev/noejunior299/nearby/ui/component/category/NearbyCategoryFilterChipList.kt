@@ -1,4 +1,4 @@
-package dev.noejunior299.nearby.component.category
+package dev.noejunior299.nearby.ui.component.category
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues

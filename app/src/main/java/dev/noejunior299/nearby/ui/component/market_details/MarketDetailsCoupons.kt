@@ -1,4 +1,4 @@
-package dev.noejunior299.nearby.component.market_details
+package dev.noejunior299.nearby.ui.component.market_details
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -19,10 +19,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import dev.noejunior299.nearby.R
-import dev.noejunior299.nearby.ui.theme.Gray400
-import dev.noejunior299.nearby.ui.theme.GreenBase
-import dev.noejunior299.nearby.ui.theme.GreenExtraLight
-import dev.noejunior299.nearby.ui.theme.Typography
+import dev.noejunior299.nearby.theme.Gray400
+import dev.noejunior299.nearby.theme.GreenBase
+import dev.noejunior299.nearby.theme.GreenExtraLight
+import dev.noejunior299.nearby.theme.Typography
 
 @Composable
 fun MarketDetailsCoupons(

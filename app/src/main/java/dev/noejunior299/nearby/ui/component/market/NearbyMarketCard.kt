@@ -1,4 +1,4 @@
-package dev.noejunior299.nearby.component.market
+package dev.noejunior299.nearby.ui.component.market
 
 
 import androidx.compose.foundation.Image
@@ -30,12 +30,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import dev.noejunior299.nearby.R
 import dev.noejunior299.nearby.data.model.NearbyMarket
-import dev.noejunior299.nearby.ui.theme.Gray100
-import dev.noejunior299.nearby.ui.theme.Gray200
-import dev.noejunior299.nearby.ui.theme.Gray400
-import dev.noejunior299.nearby.ui.theme.Gray500
-import dev.noejunior299.nearby.ui.theme.RedBase
-import dev.noejunior299.nearby.ui.theme.Typography
+import dev.noejunior299.nearby.theme.Gray100
+import dev.noejunior299.nearby.theme.Gray200
+import dev.noejunior299.nearby.theme.Gray400
+import dev.noejunior299.nearby.theme.Gray500
+import dev.noejunior299.nearby.theme.RedBase
+import dev.noejunior299.nearby.theme.Typography
 
 @Composable
 fun NearbyMarketCard(

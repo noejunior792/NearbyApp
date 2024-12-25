@@ -1,4 +1,4 @@
-package dev.noejunior299.nearby.component.market_details
+package dev.noejunior299.nearby.ui.component.market_details
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,9 +15,9 @@ import androidx.compose.ui.unit.dp
 import dev.noejunior299.nearby.R
 import dev.noejunior299.nearby.data.model.NearbyMarket
 import dev.noejunior299.nearby.data.model.mock.mockMarkets
-import dev.noejunior299.nearby.ui.theme.Gray400
-import dev.noejunior299.nearby.ui.theme.Gray500
-import dev.noejunior299.nearby.ui.theme.Typography
+import dev.noejunior299.nearby.theme.Gray400
+import dev.noejunior299.nearby.theme.Gray500
+import dev.noejunior299.nearby.theme.Typography
 
 @Composable
 fun MarketDetailsInfos(

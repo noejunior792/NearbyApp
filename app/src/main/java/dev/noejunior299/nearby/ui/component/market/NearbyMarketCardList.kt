@@ -1,4 +1,4 @@
-package dev.noejunior299.nearby.component.market
+package dev.noejunior299.nearby.ui.component.market
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.lazy.LazyColumn
@@ -10,7 +10,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import dev.noejunior299.nearby.data.model.NearbyMarket
 import dev.noejunior299.nearby.data.model.mock.mockMarkets
-import dev.noejunior299.nearby.ui.theme.Typography
+import dev.noejunior299.nearby.theme.Typography
 
 @Composable
 fun NearbyMarketCardList(

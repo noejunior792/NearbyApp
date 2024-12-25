@@ -1,4 +1,4 @@
-package dev.noejunior299.nearby.ui.theme
+package dev.noejunior299.nearby.theme
 
 import androidx.compose.ui.graphics.Color
 

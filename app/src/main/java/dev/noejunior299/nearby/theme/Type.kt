@@ -1,4 +1,4 @@
-package dev.noejunior299.nearby.ui.theme
+package dev.noejunior299.nearby.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

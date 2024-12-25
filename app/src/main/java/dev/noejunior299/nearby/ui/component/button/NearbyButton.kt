@@ -1,4 +1,4 @@
-package dev.noejunior299.nearby.component.button
+package dev.noejunior299.nearby.ui.component.button
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.Arrangement
@@ -18,7 +18,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import dev.noejunior299.nearby.R
-import dev.noejunior299.nearby.ui.theme.GreenBase
+import dev.noejunior299.nearby.theme.GreenBase
 
 
 @Composable
