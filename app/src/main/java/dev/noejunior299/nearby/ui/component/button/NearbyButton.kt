@@ -19,31 +19,31 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import dev.noejunior299.nearby.R
 import dev.noejunior299.nearby.theme.GreenBase
-
+import dev.noejunior299.nearby.theme.Typography
 
 @Composable
-private fun String?.NearbyButton(
+fun NearbyButton(
     modifier: Modifier = Modifier,
+    text: String? = null,
     @DrawableRes iconRes: Int? = null,
     onClick: () -> Unit
 ) {
+
     Button(
-        shape = RoundedCornerShape(16.dp),
         modifier = modifier.heightIn(min = 56.dp),
-        contentPadding = if (this == null && iconRes != null) PaddingValues(0.dp) else PaddingValues(0.dp),
-        onClick = onClick,
-        colors = ButtonDefaults.buttonColors(
-            containerColor = GreenBase
-        )
+        shape = RoundedCornerShape(16.dp),
+        contentPadding = if (text == null && iconRes != null) PaddingValues(0.dp) else ButtonDefaults.ContentPadding,
+        colors = ButtonDefaults.buttonColors(containerColor = GreenBase),
+        onClick = onClick
     ) {
         Row(
-            horizontalArrangement = Arrangement.spacedBy(8.dp),
             verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             iconRes?.let {
-                Icon(painter = painterResource(id = iconRes), contentDescription = "Ícone do Botão")
+                Icon(painter = painterResource(id = iconRes), contentDescription = "Icone botao")
             }
-            this@NearbyButton?.let { Text(text = this@NearbyButton) }
+            text?.let { Text(text = text.uppercase(), style = Typography.labelLarge) }
         }
     }
 }
@@ -51,10 +51,21 @@ private fun String?.NearbyButton(
 @Preview
 @Composable
 private fun NearbyButtonPreview() {
-    "Faça o scan".NearbyButton(
+    NearbyButton(
         modifier = Modifier.fillMaxWidth(),
+        text = "Confirmar",
         iconRes = R.drawable.ic_scan
-    ) {
+    ) {}
+}
 
-    }
+@Preview
+@Composable
+private fun NearbyButtonNoIconPreview() {
+    NearbyButton(modifier = Modifier.fillMaxWidth(), text = "Confirmar") {}
+}
+
+@Preview
+@Composable
+private fun NearbyButtonNoTextPreview() {
+    NearbyButton(modifier = Modifier, iconRes = R.drawable.ic_arrow_left) {}
 }
